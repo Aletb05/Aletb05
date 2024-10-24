@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<head>
+    <title>AAA. Internacional Ltda.</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/diseños.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+
+    <!-- AR.js Script -->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.1/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Agenda</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contáctanos</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Agricultura Avanzada de América</h1>
+            <h2>AAA. Internacional Ltda.</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección AR -->
+        <section class="realidad-aumentada">
+            <a-scene embedded arjs>
+                <!-- Marcador AR basado en un código QR o marcador predefinido "hiro" -->
+                <a-marker preset="hiro">
+                    <!-- Añadir un objeto 3D básico (caja) -->
+                    <a-box position="0 0.5 0" material="color: yellow;"></a-box>
+                </a-marker>
+                <!-- Definir la cámara de la escena AR -->
+                <a-entity camera></a-entity>
+            </a-scene>
+        </section>
+        <!-- Fin de la sección AR -->
+
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Acerca de nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/imagen2.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3>Misión</h3>
+                    <p>Ser el líder en innovación agrícola en América, transformando la producción de alimentos a través de tecnologías sostenibles y prácticas inteligentes que promuevan la seguridad alimentaria y el bienestar ambiental para las futuras generaciones.
+                    </p>
+                    <h3>Visión</h3>
+                    <p>Proporcionar soluciones agrícolas avanzadas que integren tecnología de punta y sostenibilidad, capacitando a los agricultores para maximizar su productividad y rentabilidad. Nos comprometemos a investigar y desarrollar métodos innovadores que respeten el medio ambiente y mejoren la calidad de vida de las comunidades agrícolas en América.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="catálogo">
+            <div class="contenedor">
+                <h2 class="titulo">Catálogo</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cosechadoras de Arroz Serie C</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cosechadoras de granos Serie S</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cosechadoras de caña Serie CH</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/imgn.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Cosechadoras de Algodón</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Sembradora 1590</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Sembradora 1010</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Sembradora 1015</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/img7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/icono1.png" alt="">
+                            <p>Plantadora 1113</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clientes contenedor">
+            <h2 class="titulo">Lo que opinan nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/face1.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Carlos Barrientos</h4>
+                        <p>"¡Excelente experiencia! La maquinaria de agricultura que alquilé estaba en perfectas condiciones y facilitó enormemente mi trabajo en el campo. Sin duda, volveré a contratar sus servicios."</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/face2.jpg" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Aldrin Tejerina</h4>
+                        <p>"Tienen una amplia gama de maquinaria que se adapta a cualquier tipo de trabajo agrícola. El proceso de alquiler fue rápido y sencillo. Definitivamente, una gran opción para agricultores."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Servicios de Campo</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/alquiler.jpg" alt="">
+                        <h3>Alquiler de Maquinaria</h3>
+                        <p>Alquiler de máquinas para cosecha, siembra, control de plagas con agroquímico.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/siembra.jpg" alt="">
+                        <h3>Servicio de siembra y cosecha</h3>
+                        <p>Realizamos servicios de siembra y cosecha en todo el país, especializado en cada grano.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/dron.jpg" alt="">
+                        <h3>Vigilancia de campo con Dron</h3>
+                        <p>Monitoreamos tu campo de siembra con drones para facilitar el acceso y tiempo .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>+59173146555</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>aaainternacionaltda@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Ubicación</h4>
+                <p>Santa Cruz de la Sierra Bolivia</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; AAA Internacional Ltda.</h2>
+        <div class="qr-code">
+            <img src="img/QRR.png" alt="Escanea para catálogo en realidad aumentada">
+        </div>
+    </footer>
+</body>
+
+</html>
